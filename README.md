@@ -1,6 +1,6 @@
-# NgOpenCV
+# NgxOpenCV
 
-This is a library that integrates Angular v6+ with OpenCVJS, the Javascript port of the popular computer 
+This is a library that integrates Angular v16+ with OpenCVJS, the Javascript port of the popular computer 
 vision library. It will allow you to load the library (with its WASM components) and use it in your application. The loading is done asynchrosnously after your Angular app has booted. The attached service makes use of a notifier to indicate when the loading is done and the service and library is ready for use.
 
 [Please read this blog post for the whole background on how this library came together](https://medium.com/@abookone/integrating-opencv-js-with-an-angular-application-20ae11c7e217)
@@ -12,17 +12,17 @@ vision library. It will allow you to load the library (with its WASM components)
 ### NPM
 
 ```
-npm install ng-open-cv --save
+npm install ngx-open-cv --save
 ```
 
 
 ### Yarn
 
 ```
-yarn add ng-open-cv
+yarn add ngx-open-cv
 ```
 
-Once the library is installed you will need to copy the `opencv` content from the `node_modules/ng-open-cv/lib/assets` folder to your own `assets` folder. This folder
+Once the library is installed you will need to copy the `opencv` content from the `node_modules/ngx-open-cv/lib/assets` folder to your own `assets` folder. This folder
 contains the actual OpenCV library (v3.4) and its WASM and ASM.js files.
 
 ### Data files
@@ -63,7 +63,7 @@ declare var cv: any;
 
 ## Usage
 
-If you have installed NgOpenCV and copied the `opencv` folder to your `assets` directory, everything should work out of the box. 
+If you have installed NgxOpenCV and copied the `opencv` folder to your `assets` directory, everything should work out of the box. 
 
 
 #### 1. Import the `NgOpenCVModule`
@@ -97,10 +97,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { NgOpenCVModule } from 'ng-open-cv';
+import { NgOpenCVModule } from 'ngx-open-cv';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
-import { OpenCVOptions } from 'projects/ng-open-cv/src/public_api';
+import { OpenCVOptions } from 'projects/ngx-open-cv/src/public_api';
 
 const openCVConfig: OpenCVOptions = {
   scriptUrl: `assets/opencv/opencv.js`,
@@ -149,13 +149,13 @@ export class SharedModule {
 ```
 
 #### 3. Use the `NgOpenCVService` for your application
-- Import `NgOpenCVService` from `ng-open-cv` in your application code:
+- Import `NgOpenCVService` from `ngx-open-cv` in your application code:
 
 ```ts
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { fromEvent, Observable } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
-import { NgOpenCVService, OpenCVLoadResult } from 'ng-open-cv';
+import { NgOpenCVService, OpenCVLoadResult } from 'ngx-open-cv';
 
 @Component({
   selector: 'app-hello',
@@ -203,7 +203,7 @@ export class HelloComponent implements OnInit {
 
 ```
  
- The NgOpenCVService exposes a `isReady$` observable which you should always subscribe too before attempting to do anything OpenCV related. It emits an [OpenCVLoadResult](projects/ng-open-cv/src/lib/ng-open-cv.models.ts) object that is structured as:
+ The NgOpenCVService exposes a `isReady$` observable which you should always subscribe too before attempting to do anything OpenCV related. It emits an [OpenCVLoadResult](projects/ngx-open-cv/src/lib/ngx-open-cv.models.ts) object that is structured as:
 
 
  ```ts

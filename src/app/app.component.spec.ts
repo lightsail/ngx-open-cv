@@ -13,15 +13,15 @@ describe('AppComponent', () => {
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   }));
-  it(`should have as title 'ng-open-cv-lib'`, async(() => {
+  it(`should have as title 'ngx-open-cv-lib'`, async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('ng-open-cv-lib');
+    expect(app.title).toEqual('ngx-open-cv-lib');
   }));
   it('should render title in a h1 tag', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to ng-open-cv-lib!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to ngx-open-cv-lib!');
   }));
 });

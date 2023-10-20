@@ -1,5 +1,5 @@
 /*
- * Public API Surface of ng-open-cv
+ * Public API Surface of ngx-open-cv
  */
 
 export * from './lib/ng-open-cv.models';

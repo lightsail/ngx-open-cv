@@ -18,15 +18,15 @@
       "dom"
     ],
     "paths": {
-      "ng-open-cv": [
-        "dist/ng-open-cv",
-        "dist/ng-open-cv",
-        "dist/ng-open-cv"
+      "ngx-open-cv": [
+        "dist/ngx-open-cv",
+        "dist/ngx-open-cv",
+        "dist/ngx-open-cv"
       ],
-      "ng-open-cv/*": [
-        "dist/ng-open-cv/*",
-        "dist/ng-open-cv/*",
-        "dist/ng-open-cv/*"
+      "ngx-open-cv/*": [
+        "dist/ngx-open-cv/*",
+        "dist/ngx-open-cv/*",
+        "dist/ngx-open-cv/*"
       ]
     }
   }

@@ -1,7 +1,9 @@
 import { Component, OnInit, ViewChild, AfterViewInit, ElementRef } from '@angular/core';
-import { NgOpenCVService, OpenCVLoadResult } from 'ng-open-cv';
+
 import { tap, switchMap, filter } from 'rxjs/operators';
-import { forkJoin, Observable, empty, fromEvent, BehaviorSubject } from 'rxjs';
+import { forkJoin, Observable, fromEvent, BehaviorSubject } from 'rxjs';
+import {NgOpenCVService} from "../../../projects/ngx-open-cv/src/lib/ng-open-cv.service";
+import {OpenCVLoadResult} from "../../../projects/ngx-open-cv/src/lib/ng-open-cv.models";
 
 @Component({
   selector: 'app-face-detection',

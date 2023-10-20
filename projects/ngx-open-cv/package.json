@@ -1,8 +1,8 @@
 {
-  "name": "ng-open-cv",
+  "name": "@lightsailed/ngx-open-cv",
   "author": "Abou Kone",
-  "version": "0.3.1",
-  "description": "Angular 6+ library integration for OpenCV.js",
+  "version": "16.2.10",
+  "description": "Angular 16+ library integration for OpenCV.js",
   "keywords": [
     "Angular",
     "OpenCV",
@@ -13,11 +13,12 @@
   "license": "SEE LICENSE IN LICENSE",
   "repository": {
     "type": "git",
-    "url": "https://github.com/devakone/ng-open-cv-lib"
+    "url": "https://github.com/lightsail/ngx-open-cv"
   },
   "homepage": "https://medium.com/code-divoire/integrating-opencv-js-with-an-angular-application-20ae11c7e217",
   "peerDependencies": {
-    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
-    "@angular/core": "^6.1.8"
+    "@angular/common": "^16.2.10",
+    "@angular/compiler": "^16.2.10",
+    "@angular/core": "^16.2.10"
   }
 }

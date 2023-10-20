@@ -1,7 +1,8 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { fromEvent, Observable } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
-import { NgOpenCVService, OpenCVLoadResult } from 'ng-open-cv';
+import {OpenCVLoadResult} from "../../../projects/ngx-open-cv/src/lib/ng-open-cv.models";
+import {NgOpenCVService} from "../../../projects/ngx-open-cv/src/lib/ng-open-cv.service";
 
 @Component({
   selector: 'app-hello',
