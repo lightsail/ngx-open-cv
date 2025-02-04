@@ -1,8 +1,8 @@
 {
   "name": "@lightsailed/ngx-open-cv",
   "author": "Abou Kone",
-  "version": "17.2.3",
-  "description": "Angular 17+ library integration for OpenCV.js",
+  "version": "18.2.13",
+  "description": "Angular 18+ library integration for OpenCV.js",
   "keywords": [
     "Angular",
     "OpenCV",
@@ -17,8 +17,8 @@
   },
   "homepage": "https://medium.com/code-divoire/integrating-opencv-js-with-an-angular-application-20ae11c7e217",
   "peerDependencies": {
-    "@angular/common": "^17.2.3",
-    "@angular/compiler": "^17.2.3",
-    "@angular/core": "^17.2.3"
+    "@angular/common": "^18.2.13",
+    "@angular/compiler": "^18.2.13",
+    "@angular/core": "^18.2.13"
   }
 }
