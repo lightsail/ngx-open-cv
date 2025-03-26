@@ -93,6 +93,23 @@
             ]
           }
         }
+      },
+      "architect": {
+        "serve": {
+          "options": {
+            "buildTarget": "ngx-open-cv-lib:build"
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "ngx-open-cv-lib:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "options": {
+            "buildTarget": "ngx-open-cv-lib:build"
+          }
+        }
       }
     },
     "ngx-open-cv-lib-e2e": {
