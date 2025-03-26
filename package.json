@@ -1,6 +1,6 @@
 {
   "name": "ngx-open-cv-lib",
-  "version": "18.2.13",
+  "version": "19.2.3",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
