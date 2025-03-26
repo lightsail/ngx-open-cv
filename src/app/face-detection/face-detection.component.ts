@@ -8,7 +8,8 @@ import {OpenCVLoadResult} from "../../../projects/ngx-open-cv/src/lib/ng-open-cv
 @Component({
   selector: 'app-face-detection',
   templateUrl: './face-detection.component.html',
-  styleUrls: ['./face-detection.component.css']
+  styleUrls: ['./face-detection.component.css'],
+  standalone: false
 })
 export class FaceDetectionComponent implements AfterViewInit, OnInit {
   imageUrl = 'assets/DaveChappelle.jpg';

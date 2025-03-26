@@ -7,7 +7,8 @@ import {NgOpenCVService} from "../../../projects/ngx-open-cv/src/lib/ng-open-cv.
 @Component({
   selector: 'app-hello',
   templateUrl: './hello.component.html',
-  styleUrls: ['./hello.component.css']
+  styleUrls: ['./hello.component.css'],
+  standalone: false
 })
 export class HelloComponent implements OnInit {
 
